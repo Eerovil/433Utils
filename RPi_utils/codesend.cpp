@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
     // This pin is not the first pin on the RPi GPIO header!
     // Consult https://projects.drogon.net/raspberry-pi/wiringpi/pins/
     // for more information.
-    int PIN = 0;
+    int PIN = 5;
     
     // Parse the first parameter to this command as an integer
     int protocol = 0; // A value of 0 will use rc-switch's default value
