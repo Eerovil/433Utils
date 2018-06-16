@@ -11,6 +11,7 @@
 #include "../rc-switch/RCSwitch.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <unistd.h>
      
      
 RCSwitch mySwitch;
@@ -50,10 +51,10 @@ int main(int argc, char *argv[]) {
           printf("Received %i\n", mySwitch.getReceivedValue() );
         }
     
+        fflush(stdout);
         mySwitch.resetAvailable();
-    
       }
-      
+      usleep(100); 
   
   }
 
